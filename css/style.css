@@ -1,1 +1,167 @@
-@charset "utf-8";
+@charset "UTF-8";
+.inner{
+  width:1100px;
+  margin: 0 auto;
+}
+.bar{
+  background: #fff;
+  padding: 15px 0;
+}
+.contact{
+  color:#ffffff;
+  background: #6ba7eb;
+  font-size:12px;
+  padding:12px 14px;
+  float: right;
+  border: none;
+}
+.contact:hover{
+  color:#333;
+  transition:0.3s;
+}
+.keyvisual{
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:400px 0;
+  text-align: center;
+}
+h1{
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+}
+.middle--headline{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 30px;
+}
+.work{
+  background: #e3f2fd;
+}
+.work--box{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.pc--img{
+width:40%;
+margin:50px 50px 0 50px;
+}
+.pc--img img{
+  width: 100%;
+  height: auto;
+}
+.text{
+text-align: center;
+width:60%
+}
+h3{
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.worktext{
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+.skills{
+  margin-top:50px;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:1100px;
+  margin: 0 auto;
+}
+.skill:nth-child(n+4){
+  margin-top: 100px;
+}
+.skill{
+  width:300px;
+  height: 300px;
+  opacity:0.7;
+}
+.skill:hover{
+  opacity:1;
+}
+.skill img{
+  width:100%;
+  height: auto;
+}
+.plan{
+background: #d0dfea;
+padding:50px 0;
+}
+.select{
+  margin:0;
+}
+.cell{
+  font-size: 16px;
+  line-height: 26px;;
+  width:100%;
+  table-layout: fixed;
+  text-align: center;
+  margin-top: 50px;
+  border-collapse:collapse;
+}
+.cell th{
+  background:#6ba7eb;
+  padding:10px;
+  border-right: 2px solid white;
+}
+.cell td{
+  line-height: 22px;
+  padding:10px;
+}
+.cell tr{
+  background: #e0efff;
+}
+.cell tr:nth-child(2n-1){
+  background: #f9f9f9;
+}
+.cell tr td{
+  border-right: 2px solid white;
+}
+.cell tr td:last-child{
+  border-right:none;
+}
+.cell th:last-child{
+  border-right:none;
+}
+.sns{
+  padding:200px;
+  display: flex;
+  justify-content: center;
+  background: #e3f2fd;
+  text-align: center;
+}
+a{
+  padding:25px 0;
+  width:185px;
+  color:#8c8c8c;
+  overflow: hidden;
+  font-size:40px;
+}
+a:hover{
+  color:#fff;
+  transition: 0.5s;
+}
+footer{
+  background: #cfd8dc;
+  padding:20px 0 25px 0;
+}
+.copy{
+  font-size:10px;
+  letter-spacing: 0.5px;
+  text-align: right;
+}
+@media screen and (max-width:1099px){
+.bar{
+  width:100%;
+}
+}
