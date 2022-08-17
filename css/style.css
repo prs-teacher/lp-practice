@@ -19,14 +19,22 @@ li {
 
 header {
 padding: 15px 100px;
+height: 60px;
 }
+
 
 .menu-nav {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	background: #fff;
+	width: 1100px;
 	align-items: center;
+	position: fixed;
+  z-index: 10; 
+}
+
+.logo {
+	width: 20%;
+	text-align: right;
 }
 
 
@@ -36,16 +44,16 @@ padding: 15px 100px;
 }
 
 .menu {
+	width: 20%;
+}
+
+.menu a {
+	transition: .3s;
 	color: #ffffff;
 	background-color: #6ba7eb;
 	font-size: 12px;
 	text-align: center;
 	padding: 12px 14px;
-}
-
-.menu a {
-	color: #ffffff;
-	transition: .3s;
 }
 
 .menu a:hover {
@@ -57,6 +65,7 @@ padding: 15px 100px;
 .kv {
 	background: url(../img/keyvisual/keyvisual.jpg)no-repeat center;
 	background-size: cover;
+	position: relative;
 }
 
 .kv .title {
@@ -231,9 +240,8 @@ tr:nth-child(5) {
 	color: #fff;
 }
 
-footer {
+.footer {
 	background: #cfd8dc;
-	width: 100%;
 }
 
 .copyright {
