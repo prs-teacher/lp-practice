@@ -18,9 +18,12 @@ li {
 }
 
 header {
-padding: 15px 100px;
-height: 60px;
-background: #fff;
+	width: 100%;
+	padding: 15px 0;
+	height: 60px;
+	background: #fff;
+	position: fixed;
+	z-index: 10; 
 }
 
 
@@ -29,8 +32,6 @@ background: #fff;
 	justify-content: space-between;
 	width: 1100px;
 	align-items: center;
-	position: fixed;
-  z-index: 10; 
 }
 
 
@@ -89,8 +90,9 @@ h1 {
 }
 
 .pc-img {
-	width: 32%;
+	width: 40%;
 	text-align: end;
+	margin-right: 100px;
 }
 
 .pc-img img {
@@ -100,7 +102,7 @@ h1 {
 
 .text {
 	width: 60%;
-	padding: 0 50px;
+	padding-right: 210px;
 }
 
 h2 {
@@ -119,6 +121,7 @@ h2 {
 	word-break: break-all;
 	font-size: 15px;
 	line-height: 18px;
+	width: 90%;
 }
 
 .skill-inner {
@@ -139,6 +142,13 @@ h2 {
 	margin: 0 100px;
 }
 
+.skill:nth-child(n+1) {
+	margin-bottom: 100px;
+}
+
+.skill:nth-child(n+4) {
+	margin-bottom: 0;
+	}
 
 .skill img {
 	width: 300px;
@@ -214,7 +224,7 @@ tr:nth-child(5) {
 
 .flex-logo li {
 	width: 185px;
-	margin: 25px 0;
+	padding: 25px 0;
 	text-align: center;
 }
 
@@ -237,7 +247,6 @@ footer {
 .copyright {
 	font-size: 10px;
 	letter-spacing: 0.5px;
-	padding: 20px 0 25px;
+	padding: 20px 100px 25px;
 	text-align: right;
-	margin-right: 100px;
 }
