@@ -23,6 +23,7 @@ header {
 	height: 60px;
 	background: #fff;
 	position: fixed;
+	top: 0;
 	z-index: 10; 
 }
 
@@ -55,7 +56,9 @@ header {
 	color: #333;
 }
 
-
+.keyvisual {
+	margin-top: 90px;
+}
 
 .kv {
 	background: url(../img/keyvisual/keyvisual.jpg)no-repeat center;
@@ -81,18 +84,19 @@ h1 {
 	color: #ffffff;
 }
 
+.work {
+	background: #e3f2fd;
+}
+
 .flex-work {
 	display: flex;
 	justify-content: center;
-	background: #e3f2fd;
-	width: 100%;
 	padding-top: 50px;
 }
 
 .pc-img {
 	width: 40%;
-	text-align: end;
-	margin-right: 100px;
+	text-align: center;
 }
 
 .pc-img img {
@@ -102,7 +106,7 @@ h1 {
 
 .text {
 	width: 60%;
-	padding-right: 210px;
+  text-align: center;
 }
 
 h2 {
@@ -117,11 +121,9 @@ h2 {
 }
 
 .text p {
-	text-align: center;
 	word-break: break-all;
 	font-size: 15px;
 	line-height: 18px;
-	width: 90%;
 }
 
 .skill-inner {
@@ -146,9 +148,11 @@ h2 {
 	margin-bottom: 100px;
 }
 
-.skill:nth-child(n+4) {
+.skill:last-child,
+.skill:nth-last-child(2),
+.skill:nth-last-child(3) {
 	margin-bottom: 0;
-	}
+}
 
 .skill img {
 	width: 300px;
