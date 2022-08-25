@@ -57,7 +57,7 @@ header {
 }
 
 .keyvisual {
-	margin-top: 90px;
+	padding-top: 90px;
 }
 
 .kv {
@@ -135,7 +135,6 @@ h2 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	margin-top: 50px;
 }
 
@@ -161,6 +160,7 @@ h2 {
 }
 
 .skill img:hover {
+	transition: 0.7s;
 	opacity: 1;
 }
 
