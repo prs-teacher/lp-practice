@@ -30,7 +30,6 @@ header {
 .menu-nav {
 	display: flex;
 	justify-content: space-between;
-	width: 1100px;
 	align-items: center;
 }
 
