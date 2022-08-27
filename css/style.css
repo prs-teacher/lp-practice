@@ -20,7 +20,6 @@ li {
 header {
 	width: 100%;
 	padding: 15px 0;
-	height: 60px;
 	background: #fff;
 	position: fixed;
 	top: 0;
@@ -242,14 +241,14 @@ tr:nth-child(5) {
 	transition: .5s;
 }
 
-.flex-logo li a i:hover {
+.flex-logo li:hover {
 	transition: 0.5s;
 	background: #fff;
 }
 
 footer {
 	background: #cfd8dc;
-	padding: 20px 0 25px;
+	padding: 20px 25px 25px;
 }
 
 .copyright {
@@ -262,28 +261,35 @@ footer {
   .inner {
     width: 97%;
   }
+
   .kv .title {
     padding: 250px 0;
   }
+
   .flex-work {
     display: block;
     padding: 50px 0;
   }
+
   .pc-img {
     width: 100%;
     text-align: center;
   }
+
   .text {
     width: 100%;
     padding: 0;
   }
+
   .text p {
     padding: 0 10px;
   }
   .grid-img {
     display: block;
+    flex-wrap: nowrap;
     text-align: center;
   }
+
   .skill:nth-child(n+1) {
     margin-bottom: 0;
   }
@@ -301,6 +307,7 @@ footer {
 @media screen and (max-width: 767px) {
   .inner {
     width: 97%;
+    margin: 0;
   }
 
   .fa-solid {
@@ -309,7 +316,7 @@ footer {
   #nav-toggle {
     position: fixed;
     top: 15px;
-    right: 15px;
+    right: 30px;
     height: 29px;
     cursor: pointer;
     border: 1px solid #000;
@@ -317,13 +324,16 @@ footer {
     padding: 5px;
     z-index: 10;
   }
+
   .sp {
     display: block;
   }
+
   #nav-toggle > div {
     position: relative;
     width: 36px;
   }
+
   #nav-toggle > div span {
     width: 100%;
     height: 2px;
@@ -333,12 +343,15 @@ footer {
     position: absolute;
     transition: 0.5s;
   }
+
   #nav-toggle > div span:nth-child(1) {
     top: 0;
   }
+
   #nav-toggle > div span:nth-child(2) {
     top: 12px;
   }
+
   #nav-toggle > div span:nth-child(3) {
     top: 24px;
   }
@@ -348,7 +361,7 @@ footer {
   }
 
   .menu {
-    transform: translate(100%);
+    transform: translate(105%);
   }
 
   header .menu-nav ul {
@@ -372,22 +385,23 @@ footer {
     padding: 200px 0;
   }
 
-  table {
-    width: 95%;
-  }
   th {
     font-size: 14px;
     line-height: 22px;
   }
+
   td {
     font-size: 12px;
   }
+
   .sns {
     padding: 50px 0;
   }
+
   .flex-logo {
     display: block;
   }
+  
   .flex-logo li {
     width: 100%;
     padding: 50px 0;
