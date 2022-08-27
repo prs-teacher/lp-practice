@@ -297,6 +297,10 @@ footer {
     margin-bottom: 80px;
   }
 
+  .skill:nth-child(3n+2) {
+    margin: 0;
+  }
+
   .skill:last-child {
     margin-bottom: 0;
   }
