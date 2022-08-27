@@ -1,1 +1,89 @@
 @charset "utf-8";
+
+/* header */
+.innner {
+  width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.contact i {
+  margin: 5px 0;
+}
+
+.contact__btn {
+  color: #fff;
+  font-size: 16px;
+  background: #686cc5;
+  margin: 1em 1em;
+}
+
+.contact__btn:hover {
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact__btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle__btn {
+  display: none;
+}
+
+/* header -responsive- */
+@media screen and (max-widrh:989px) {
+  .inner {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .inner {
+    width: 97%;
+  }
+  
+  .contact__btn {
+    display: none;
+  }
+
+  .toggle__btn {
+    display: block;
+    position: relative;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .toggle__btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+  }
+
+  .toggle__btn span:nth-child(1) {
+    top: 4px;
+  }
+
+  .toggle__btn span:nth-child(2) {
+    top: 14px;
+  }
+
+  .toggle__btn span:nth-child(3) {
+    bottom: 4px;
+  }
+}
