@@ -307,7 +307,6 @@ footer {
 @media screen and (max-width: 767px) {
   .inner {
     width: 97%;
-    margin: 0;
   }
 
   .fa-solid {
@@ -361,7 +360,9 @@ footer {
   }
 
   .menu {
-    transform: translate(105%);
+    position: fixed;
+    transform: translateX(105%);
+    right: 0;
   }
 
   header .menu-nav ul {
