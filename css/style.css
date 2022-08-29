@@ -55,7 +55,7 @@ header {
 }
 
 .keyvisual {
-	padding-top: 90px;
+	padding-top: 95px;
 }
 
 .kv {
@@ -217,19 +217,18 @@ tr:nth-child(5) {
 .sns {
 	background: #e2f2fd;
 	padding: 200px 0;
-	width: 100%;
 }
 
 .flex-logo {
 	display: flex;
 	justify-content: center;
-	width: 100%;
 }
 
 .flex-logo li {
 	width: 185px;
 	padding: 25px 0;
 	text-align: center;
+  transition: 0.5s;
 }
 
 .flex-logo li a i {
@@ -241,7 +240,6 @@ tr:nth-child(5) {
 }
 
 .flex-logo li:hover {
-	transition: 0.5s;
 	background: #fff;
 }
 
@@ -265,9 +263,13 @@ footer {
     padding: 250px 0;
   }
 
+  .work {
+    padding: 50px 0;
+  }
+
   .flex-work {
     display: block;
-    padding: 50px 0;
+
   }
 
   .pc-img {
@@ -287,6 +289,10 @@ footer {
     display: block;
     flex-wrap: nowrap;
     text-align: center;
+  }
+
+  .skill img {
+    vertical-align: middle;
   }
 
   .skill:nth-child(n+1) {
@@ -387,6 +393,10 @@ footer {
 
   .kv .title {
     padding: 200px 0;
+  }
+
+  .plan {
+    padding: 50px 15px;
   }
 
   th {
