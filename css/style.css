@@ -1,1 +1,249 @@
 @charset "utf-8";
+
+/*header部分*/
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.logo {
+  color: #777;
+  padding: 15px 0;
+  margin-left: 200px;
+}
+
+.contact {
+  color: #ffffff;
+  background-color: #6ba7eb;
+  font-size: 12px;
+  padding: 12px 14px;
+  margin-right: 170px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact:hover {
+  color: #333;
+}
+
+/*メインタイトル部分*/
+.keyvisual {
+  height: 935px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  padding-top: 400px;
+  padding-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 400px;
+}
+
+/*WORK部分*/
+.work {
+  display: flex;
+  background: #e3f2fb;
+}
+
+.pc-img {
+  width: 250px;
+  height: auto;
+  background-image: url(../img/pc/pc.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.work-text {
+  text-align: center;
+  width: 660px;
+  margin-left: 100px;
+}
+
+.work-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+
+.work-sentence {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+  padding-bottom: 35px;
+}
+
+/*SKILL部分*/
+.skills-container {
+  background: #fff;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 50px 0;
+}
+
+.skill-set {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 300px 300px;
+  gap: 100px;
+  grid-template-rows: 300px 300px;
+  margin-bottom: 70px;
+}
+
+.skill-logo {
+  background-image: url(../img/skills/skills_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-camera {
+  background-image: url(../img/skills/skills_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-cloud {
+  background-image: url(../img/skills/skills_3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-movie {
+  background-image: url(../img/skills/skills_4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-photo {
+  background-image: url(../img/skills/skills_5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-music {
+  background-image: url(../img/skills/skills_6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+
+.skill-logo:hover,.skill-camera:hover,.skill-cloud:hover,
+.skill-movie:hover,.skill-photo:hover,.skill-music:hover {
+  opacity: 1;
+}
+
+/*PLAN部分*/
+.plan-container {
+  background: #d0dfea;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.plan-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 50px 0;
+}
+
+.plan-table {
+  width: 80%;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border-left: 2px solid #fff;
+}
+
+th {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px;
+  background: #6ba7eb;
+}
+
+td {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px;
+}
+
+.plan-table tr:nth-child(odd) td {
+  background: #e0efff;
+}
+
+.plan-table tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+tr td:nth-of-type(1) {
+  font-weight: bold;
+  border-left: none;
+}
+
+tr th:nth-of-type(1) {
+  border-left: none;
+}
+
+/*SNS部分*/
+.sns {
+  background: #e3f2fb;
+}
+
+.sns-nav {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.sns-logo {
+  width: 185px;
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+  padding: 25px 0;
+  transition: 0.5s;
+}
+
+.sns-logo:hover {
+  color: #fff;
+}
+
+/*footer部分*/
+footer {
+  background: #cfd8dc;
+  text-align: right;
+}
+
+.credit {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+  margin-right: 100px;
+}
