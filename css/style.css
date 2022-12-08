@@ -39,6 +39,11 @@ nav {
     color: #333;
 }
 
+/* ハンバーガー */
+.drawer_hidden {
+    display: none;
+}
+
 /* keyvisual */
 
 .title {
@@ -208,4 +213,180 @@ i {
     color: #7A7F80;
     text-align: right;
     margin: 0 100px;
+}
+
+/* TAB */
+
+@media screen and (max-width: 1199px) {
+    .inner {
+        width: 97%;
+    }
+    
+    /* keyvisual */
+    .keyvisual-inner {
+        padding: 250px 0;
+    }
+
+    /* WORK */
+    .work_inner {
+        padding-bottom: 50px;
+    }
+
+    .work_img {
+        float: none;
+    }
+
+    .work_inner p {
+        margin: 0;
+    }
+
+    /* SKILLS */
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: -1px 0;
+    }
+
+    li:nth-child(3n) {
+        margin: -1px 0 80px 0;
+    }
+
+    li:first-child {
+        margin-top: 50px;
+    }
+
+}
+
+/* SP */
+
+@media screen and (max-width: 767px) {
+    .inner {
+        width: 97%;
+    }
+    
+    /* header */
+    .contact {
+        display: none;
+    }
+
+    /* ハンバーガー */
+
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer_open {
+        display: flex;
+            height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;/* 重なり順を一番上にする */
+        cursor: pointer;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #333;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    /* 三本線の一番上の棒の位置調整 */
+    .drawer_open span:before {
+        bottom: 8px;
+    }
+  
+    /* 三本線の一番下の棒の位置調整 */
+    .drawer_open span:after {
+        top: 8px;
+    }
+  
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer_input:checked ~ .drawer_open span {
+        background: rgba(255, 255, 255, 0);
+    }
+  
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer_input:checked ~ .drawer_open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+  
+    #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+    /* メニューのデザイン*/
+    .nav_content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: 100%;
+        left: 0%; /* メニューを画面の外に飛ばす */
+        z-index: 99;
+        background: rgb(110, 110, 110);
+        transition: .5s;
+        text-align: center;
+        padding-top: 20px;
+    }
+  
+    /* メニュー黒ポチを消す */
+    .nav_list {
+        list-style: none;
+    }
+  
+    .nav_item a {
+        color: #fff;
+        text-decoration: none;
+    }
+  
+    /* アイコンがクリックされたらメニューを表示 */
+    .drawer_input:checked ~ .nav_content {
+        bottom: 0;/* メニューを画面に入れる */
+    }
+    
+    /* keyvisual */
+    .title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    .keyvisual-inner {
+        padding: 200px 0;
+    }
+
+    /* plan */
+    th {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    td {font-size: 12px;}
+
+    /* sns */
+    .icon {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 50px 0;
+    }
+
+    .icon > a {
+        width: 185px;
+        font-size: 40px;
+        margin: 50px 120px;
+  }  
 }
