@@ -1,8 +1,63 @@
 @charset "utf-8";
 
+.keyvisual {
+  height: 935px;
+  position: relative;
+  margin: 0 auto;
 
-.keyvisual-1 {
+  
 
-  background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
+  /*↓子要素が複数あった場合に縦方向に並ぶ
+  flex-direction: column;
+  */
 }
 
+.content-keyvisual {
+  height: 935px;
+  /*
+  text-align:center;
+  display:block;
+  margin:0 auto;
+  */
+  background-size:cover;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-repeat: no-repeat center/contain;
+  
+}
+
+.title-1 {
+  position: absolute;
+  /*青い字を400pxに設置したい*/
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  font-size: 65px;
+  font-weight: 700px;
+  color: #6ba7eb;
+  margin-bottom: 30px;
+
+
+  /*１行に収めたい*/
+  white-space: nowrap;
+}
+
+.title-2 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700px;
+  color: #ffffff;
+
+  /*下400px付けたい*/
+  margin-bottom: 400px;
+
+  /*白い文字を青い字の下に置きたい*/
+  top: 495px;
+
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+    /*１行に収めたい*/
+    white-space: nowrap;
+
+} 
