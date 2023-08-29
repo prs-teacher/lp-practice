@@ -1,11 +1,12 @@
 @charset "utf-8";
 
+
+
+
 .keyvisual {
   height: 935px;
   position: relative;
   margin: 0 auto;
-
-  
 
   /*↓子要素が複数あった場合に縦方向に並ぶ
   flex-direction: column;
