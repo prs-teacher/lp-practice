@@ -1,13 +1,82 @@
 @charset "utf-8";
 
+/*
+PCの横幅は1100px
+SP,TABの横幅は97%*/
 
+.nav-background{
+  height: 80px;
+  width: 100%;
+  background-color:#fff;
+}
 
+/*アイコンに大きさや色指定をするには？*/
+.nav-icon{
+  margin : 15px 15px;
+  /*横並びかつ左寄せ*/
+  float : left; 
+}
+  
+.contact{
 
+}
+
+.contact-pc{
+  float: right;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 14px;
+  background-color: #6ba7be;
+  width: 50px;
+  margin : 20px ;
+
+}
+
+/*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用
+.hamburger {
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 15px;
+  border: none;
+  background: transparent;
+}
+
+.hamburger_bar {
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  background: #777;
+  transition: top 0.24s, transform 0.24s, opacity 0.24s;
+  border-radius : 4px
+}
+
+.hamburger_bar:nth-child(1) {
+  top: 0;
+}
+
+.hamburger_bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger_bar:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+*/
+
+/*ディスクトップ写真の部分*/
 .keyvisual {
   height: 935px;
   position: relative;
   margin: 0 auto;
-
+  
+  clear :  both; 
   /*↓子要素が複数あった場合に縦方向に並ぶ
   flex-direction: column;
   */
@@ -51,14 +120,47 @@
 
   /*下400px付けたい*/
   margin-bottom: 400px;
-
+  
   /*白い文字を青い字の下に置きたい*/
   top: 495px;
-
   left: 50%;
+  /*文字サイズの半分左上にずらして中央に整える*/
   transform: translate(-50%,-50%);
-
-    /*１行に収めたい*/
-    white-space: nowrap;
+  
+  /*１行に収めたい*/
+  white-space: nowrap;
 
 } 
+
+
+.pc-section{
+  background:#e3f2fd;
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.pc-icon{
+  width: 250px;
+  float: left;
+  margin-top: 50px;
+}
+
+/*イマココ！！！！*/
+/*おそらくinnerというまとめ方で中央寄せする*/
+
+.work-title{
+  /*テキストの回り込みを防ぎたい*/
+  float: left;
+  font-size: 40px;
+  letter-spacing: 10px;/*字間の調整*/
+  margin-top: 20px;
+  margin-bottom: 35px;
+  
+}
+
+.work-text{
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;/*改行の仕方の指定*/
+}
