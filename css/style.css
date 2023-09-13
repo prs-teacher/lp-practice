@@ -4,6 +4,8 @@
 PCの横幅は1100px
 SP,TABの横幅は97%*/
 
+
+
 .nav-background{
   height: 80px;
   width: 100%;
@@ -21,7 +23,7 @@ SP,TABの横幅は97%*/
 
 }
 
-.contact-pc{
+.contact-buttom{
   float: right;
   color: #ffffff;
   font-size: 12px;
@@ -133,11 +135,19 @@ SP,TABの横幅は97%*/
 } 
 
 
-.pc-section{
+/*WORKの部分*/
+.work{
   background:#e3f2fd;
   position: relative;
   height: 300px;
-  width: 100%;
+  
+  /*↓これがinner？*/
+  width: 800px; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  
+
 }
 
 .pc-icon{
@@ -150,8 +160,7 @@ SP,TABの横幅は97%*/
 /*おそらくinnerというまとめ方で中央寄せする*/
 
 .work-title{
-  /*テキストの回り込みを防ぎたい*/
-  float: left;
+  /*ここが若干中央寄せできてない？*/
   font-size: 40px;
   letter-spacing: 10px;/*字間の調整*/
   margin-top: 20px;
@@ -160,7 +169,37 @@ SP,TABの横幅は97%*/
 }
 
 .work-text{
+  overflow: hidden;/*文字の回り込み解除*/
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;/*改行の仕方の指定*/
+  
+
+} 
+
+.work-text , .work-title{
+  padding-left: 30px;
+  text-align:center;/*文字の中央寄せ*/
+  
 }
+
+.pc-section {
+  height: 250px;
+  padding: 40px 70px;
+}
+
+/*
+.work-text .work-title{
+  text-align:center;
+  padding:20px 0;
+}
+
+.work-text .work-title{
+  float: left;
+  width: 700px;
+  display:table;
+  text-align:center;
+  margin-left: 10px;
+  max-width: 100%;
+}
+*/
