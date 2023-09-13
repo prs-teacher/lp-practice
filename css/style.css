@@ -6,31 +6,29 @@ SP,TABの横幅は97%*/
 
 
 
-.nav-background{
+.nav-background {
   height: 80px;
   width: 100%;
-  background-color:#fff;
+  background-color: #fff;
 }
 
 /*アイコンに大きさや色指定をするには？*/
-.nav-icon{
-  margin : 15px 15px;
+.nav-icon {
+  margin: 15px 15px;
   /*横並びかつ左寄せ*/
-  float : left; 
-}
-  
-.contact{
-
+  float: left;
 }
 
-.contact-buttom{
+.contact {}
+
+.contact-buttom {
   float: right;
   color: #ffffff;
   font-size: 12px;
   padding: 12px 14px;
   background-color: #6ba7be;
   width: 50px;
-  margin : 20px ;
+  margin: 20px;
 
 }
 
@@ -77,8 +75,8 @@ SP,TABの横幅は97%*/
   height: 935px;
   position: relative;
   margin: 0 auto;
-  
-  clear :  both; 
+
+  clear: both;
   /*↓子要素が複数あった場合に縦方向に並ぶ
   flex-direction: column;
   */
@@ -91,10 +89,10 @@ SP,TABの横幅は97%*/
   display:block;
   margin:0 auto;
   */
-  background-size:cover;
+  background-size: cover;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat center/contain;
-  
+
 }
 
 .title-1 {
@@ -102,7 +100,7 @@ SP,TABの横幅は97%*/
   /*青い字を400pxに設置したい*/
   top: 400px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   font-size: 65px;
   font-weight: 700px;
@@ -122,35 +120,48 @@ SP,TABの横幅は97%*/
 
   /*下400px付けたい*/
   margin-bottom: 400px;
-  
+
   /*白い文字を青い字の下に置きたい*/
   top: 495px;
   left: 50%;
   /*文字サイズの半分左上にずらして中央に整える*/
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
+
   /*１行に収めたい*/
   white-space: nowrap;
 
-} 
+}
 
 
 /*WORKの部分*/
-.work{
-  background:#e3f2fd;
-  position: relative;
-  height: 300px;
-  
-  /*↓これがinner？*/
-  width: 800px; /* 好きな幅 */
+
+.work-inner {
+  width: 800px;
+  /* 好きな幅 */
   max-width: 100%;
   margin: 0 auto;
-  padding: 24px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background: #e3f2fd;
+}
+
+.work {
+  background: red;
   
+  
+
+  /*↓これがinner？*/
+  width: 100%;
+  /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+  
+
 
 }
 
-.pc-icon{
+.pc-icon {
   width: 250px;
   float: left;
   margin-top: 50px;
@@ -159,33 +170,39 @@ SP,TABの横幅は97%*/
 /*イマココ！！！！*/
 /*おそらくinnerというまとめ方で中央寄せする*/
 
-.work-title{
+.work-title {
   /*ここが若干中央寄せできてない？*/
   font-size: 40px;
-  letter-spacing: 10px;/*字間の調整*/
+  letter-spacing: 10px;
+  /*字間の調整*/
   margin-top: 20px;
   margin-bottom: 35px;
-  
+
 }
 
-.work-text{
-  overflow: hidden;/*文字の回り込み解除*/
+/*ここにだけ下に３５px空間を作りたいけどできない*/
+.work-text {
+  overflow: hidden;
+  /*文字の回り込み解除*/
   font-size: 15px;
   line-height: 18px;
-  word-break: break-all;/*改行の仕方の指定*/
+  word-break: break-all;
+  /*改行の仕方の指定*/
   
 
-} 
+}
 
-.work-text , .work-title{
+.work-text,
+.work-title {
   padding-left: 30px;
-  text-align:center;/*文字の中央寄せ*/
-  
+  text-align: center;
+  /*文字の中央寄せ*/
+
 }
 
 .pc-section {
-  height: 250px;
-  padding: 40px 70px;
+  height: 185px;
+  margin-top: 70px;
 }
 
 /*
