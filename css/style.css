@@ -107,7 +107,6 @@ SP,TABの横幅は97%*/
   color: #6ba7eb;
   margin-bottom: 30px;
 
-
   /*１行に収めたい*/
   white-space: nowrap;
 }
@@ -138,7 +137,6 @@ SP,TABの横幅は97%*/
 .work-inner {
   width: 800px;
   /* 好きな幅 */
-  max-width: 100%;
   margin: 0 auto;
   padding-top: 25px;
   padding-left: 25px;
@@ -147,27 +145,15 @@ SP,TABの横幅は97%*/
 }
 
 .work {
-  background: red;
-  
-  
-
-  /*↓これがinner？*/
-  width: 100%;
-  /* 好きな幅 */
-  max-width: 100%;
-  margin: 0 auto;
-  
-
-
+  background:#e3f2fd;
 }
 
 .pc-icon {
   width: 250px;
   float: left;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
-/*イマココ！！！！*/
 /*おそらくinnerというまとめ方で中央寄せする*/
 
 .work-title {
@@ -182,14 +168,13 @@ SP,TABの横幅は97%*/
 
 /*ここにだけ下に３５px空間を作りたいけどできない*/
 .work-text {
-  overflow: hidden;
   /*文字の回り込み解除*/
+  overflow: hidden;
+  /*改行の仕方の指定*/
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;
-  /*改行の仕方の指定*/
   
-
 }
 
 .work-text,
@@ -197,12 +182,11 @@ SP,TABの横幅は97%*/
   padding-left: 30px;
   text-align: center;
   /*文字の中央寄せ*/
-
 }
 
 .pc-section {
-  height: 185px;
-  margin-top: 70px;
+  height: 180px;
+  margin-top: 50px;
 }
 
 /*
@@ -220,3 +204,26 @@ SP,TABの横幅は97%*/
   max-width: 100%;
 }
 */
+
+/*skiilsの部分*/
+
+.skills{
+  background: blue;
+}
+
+.skills-inner{
+  width: 1100px;
+  height: 750px;
+  margin: 0 auto;
+  padding: 25px;
+  background: red;
+
+}
+
+.skills-icon-1{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+}
+
