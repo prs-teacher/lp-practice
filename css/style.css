@@ -206,61 +206,71 @@ SP,TABの横幅は97%*/
 
 /*skiilsの部分*/
 
+/*innerの外何も無い空間ができないように*/
 .skills{
   background: blue;
 }
 
+/*widthとmaginで中央寄せ*/
 .skills-inner{
   width: 1100px;
   height: 750px;
   margin: 0 auto;
+  /*↓なぜかpaddingが無いと崩壊する*/
   padding: 25px;
   background: #fff;
-
+  
 }
 
-.skills-icon-browser{
+/*アイコン達の大きさ*/
+/*横並び*/
+.browser,.Instagram,.crowd,.film
+,.picture,.music{
   width: 300px;
   height: 300px;
   float: left;
-  margin-top: 25px;
+  
 }
 
-.skills-icon-Instagram{
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 25px;
+/*兄弟要素の基礎margin値*/
+.s-box{
+  margin-right: 100px;
 }
 
-.skills-icon-crowd{
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 25px;
-
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(1)
+,.s-box:nth-child(2)
+,.s-box:nth-child(3) {
+  margin-bottom: 100px;
 }
 
-.skills-icon-film{
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 25px;
-
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(4)
+,.s-box:nth-child(5)
+,.s-box:nth-child(6) {
+  margin-bottom: 70px;
 }
 
-.skills-icon-picture{
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 25px;
-
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(3) {
+  margin-right: 0px;
 }
 
-.skills-icon-music{
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin-top: 25px;
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(6) {
+  margin-right: 0px;
+}
 
+/*skillsのアイコン達を中央寄せ*/
+.icon-box{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*WE ARE SKILLS」のタイトル部分*/
+.skills-title{
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 10px;
 }
