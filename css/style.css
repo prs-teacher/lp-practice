@@ -5,7 +5,6 @@ PCの横幅は1100px
 SP,TABの横幅は97%*/
 
 
-
 .nav-background {
   height: 80px;
   width: 100%;
@@ -216,14 +215,52 @@ SP,TABの横幅は97%*/
   height: 750px;
   margin: 0 auto;
   padding: 25px;
-  background: red;
+  background: #fff;
 
 }
 
-.skills-icon-1{
+.skills-icon-browser{
   width: 300px;
   height: 300px;
   float: left;
   margin-top: 25px;
 }
 
+.skills-icon-Instagram{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+}
+
+.skills-icon-crowd{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+
+}
+
+.skills-icon-film{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+
+}
+
+.skills-icon-picture{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+
+}
+
+.skills-icon-music{
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-top: 25px;
+
+}
