@@ -134,7 +134,10 @@ SP,TABの横幅は97%*/
 /*WORKの部分*/
 
 .work-inner {
-  width: 800px;
+  width: 1100px;
+  /*↓親要素にoverflowを付けると
+  子要素にflot付けてもはみ出さない！*/
+  overflow: auto;
   /* 好きな幅 */
   margin: 0 auto;
   padding-top: 25px;
@@ -208,13 +211,13 @@ SP,TABの横幅は97%*/
 
 /*innerの外何も無い空間ができないように*/
 .skills{
-  background: blue;
+  background: #fff;
 }
 
 /*widthとmaginで中央寄せ*/
 .skills-inner{
-  width: 1100px;
-  height: 750px;
+  width:1100px;
+  height: auto;
   margin: 0 auto;
   /*↓なぜかpaddingが無いと崩壊する*/
   padding: 25px;
@@ -265,6 +268,8 @@ SP,TABの横幅は97%*/
 .icon-box{
   width: 1100px;
   margin: 0 auto;
+  background: #fff;
+  overflow: auto;
 }
 
 /*WE ARE SKILLS」のタイトル部分*/
