@@ -273,10 +273,34 @@ SP,TABの横幅は97%*/
   overflow: auto;
 }
 
-/*WE ARE SKILLS」のタイトル部分*/
+/*「WE ARE SKILLS」のタイトル部分*/
 .skills-title{
   margin-top: 25px;
   margin-bottom: 50px;
   font-size: 40px;
   letter-spacing: 10px;
 }
+
+/*「SELECT PLAN」のタイトルがある部分*/
+
+.plan{
+  background: blue;
+}
+/*いらない？↑*/
+
+.plan-inner{
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    background: #d0dfea;
+}
+
+.plan-title{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    
+}
+
