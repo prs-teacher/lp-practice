@@ -18,7 +18,7 @@ SP,TABの横幅は97%*/
   float: left;
 }
 
-.contact {}
+
 
 .contact-buttom {
   float: right;
@@ -71,63 +71,41 @@ SP,TABの横幅は97%*/
 
 /*ディスクトップ写真の部分*/
 .keyvisual {
-  height: 935px;
-  position: relative;
-  margin: 0 auto;
-
   clear: both;
+  background-size: cover;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
   /*↓子要素が複数あった場合に縦方向に並ぶ
   flex-direction: column;
   */
 }
 
 .content-keyvisual {
-  height: 935px;
+  margin: 0 auto;
+  padding: 400px 0;
+  max-width: 1100px;
   /*
   text-align:center;
   display:block;
   margin:0 auto;
   */
-  background-size: cover;
-  background-image: url(../img/keyvisual/keyvisual.jpg);
-  background-repeat: no-repeat center/contain;
-
+  
 }
 
 .title-1 {
-  position: absolute;
-  /*青い字を400pxに設置したい*/
-  top: 400px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+  text-align: center;
   font-size: 65px;
-  font-weight: 700px;
   color: #6ba7eb;
-  margin-bottom: 30px;
-
   /*１行に収めたい*/
   white-space: nowrap;
 }
 
 .title-2 {
-  position: absolute;
+  text-align: center;
   font-size: 40px;
-  font-weight: 700px;
   color: #ffffff;
-
   /*下400px付けたい*/
-  margin-bottom: 400px;
-
-  /*白い文字を青い字の下に置きたい*/
-  top: 495px;
-  left: 50%;
-  /*文字サイズの半分左上にずらして中央に整える*/
-  transform: translate(-50%, -50%);
-
   /*１行に収めたい*/
   white-space: nowrap;
-
 }
 
 
@@ -141,10 +119,8 @@ SP,TABの横幅は97%*/
   overflow: auto;
   /* 好きな幅 */
   margin: 0 auto;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
   background: #e3f2fd;
+  padding-top: 50px;
 }
 
 .work {
@@ -154,42 +130,34 @@ SP,TABの横幅は97%*/
 .pc-icon {
   width: 250px;
   float: left;
-  margin-top: 25px;
 }
 
 /*おそらくinnerというまとめ方で中央寄せする*/
 
 .work-title {
-  /*ここが若干中央寄せできてない？*/
   font-size: 40px;
   letter-spacing: 10px;
-  /*字間の調整*/
-  margin-top: 20px;
-  margin-bottom: 35px;
-
+  padding-top: 20px;
+  padding-bottom: 35px;
 }
 
-/*ここにだけ下に３５px空間を作りたいけどできない*/
 .work-text {
-  /*文字の回り込み解除*/
   overflow: hidden;
-  /*改行の仕方の指定*/
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;
-
 }
 
 .work-text,
 .work-title {
-  padding-left: 30px;
   text-align: center;
-  /*文字の中央寄せ*/
 }
 
 .pc-section {
   height: 180px;
-  margin-top: 50px;
+  margin: 0 auto;
+  max-width: 750px;
+  float: right;
 }
 
 /*
@@ -356,12 +324,31 @@ SP,TABの横幅は97%*/
   width: 1100px;
   height: auto;
   margin: 0 auto;
-  padding: 200px 0 200px 0;
+  padding: 200px 0 ;
   background: #e3f2fd;
+  text-align: center;
 }
 
-.fab {
+.fab , .fa-solid {
   font-size: 40px;
+  padding: 25px 50px;
+  margin: 0 auto;
   /*↑なぜかメールのアイコンが消えてしまう*/
 }
 
+footer {
+  background: #cfd8dc;
+}
+
+.footer-inner {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Copyright {
+  padding: 20px 0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  float: right;
+}
