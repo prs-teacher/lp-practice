@@ -13,11 +13,9 @@ SP,TABの横幅は97%*/
 
 /*アイコンに大きさや色指定をするには？*/
 .nav-icon {
-  margin: 15px 15px;
-  /*横並びかつ左寄せ*/
+  padding: 15px 0 15px 100px;
   float: left;
 }
-
 
 
 .contact-buttom {
@@ -27,9 +25,14 @@ SP,TABの横幅は97%*/
   padding: 12px 14px;
   background-color: #6ba7be;
   width: 50px;
-  margin: 20px;
-
+  margin: 15px 100px 0 0;
+  -webkit-transition: all 0.3s ease;
 }
+
+.contact-buttom:hover {
+  background-color :#333;/*背景色*/
+  }
+
 
 /*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用
 .hamburger {
@@ -211,7 +214,13 @@ SP,TABの横幅は97%*/
 /*兄弟要素の基礎margin値*/
 .s-box {
   margin-right: 100px;
+  opacity: 0.7;
 }
+
+.s-box:hover {
+	opacity: 1.0 ;
+}
+
 
 /*擬似要素でmarginを細かく指定*/
 .s-box:nth-child(1),
@@ -317,7 +326,7 @@ SP,TABの横幅は97%*/
 
 /*SNS*/
 .sns{
-  background: red;
+  background: #e3f2fd;;
 }
 
 .sns-inner{
@@ -329,11 +338,28 @@ SP,TABの横幅は97%*/
   text-align: center;
 }
 
-.fab , .fa-solid {
+.fab {
   font-size: 40px;
   padding: 25px 50px;
   margin: 0 auto;
-  /*↑なぜかメールのアイコンが消えてしまう*/
+  color: #8c8c8c;
+  -webkit-transition: all 0.5s ease;
+}
+
+  .fa-solid {
+  font-size: 40px;
+  padding: 25px 50px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  -webkit-transition: all 0.5s ease;
+}
+
+.fa-solid:hover {
+  color: #fff;
+}
+
+.fab:hover {
+  color: #fff;
 }
 
 footer {
@@ -342,12 +368,12 @@ footer {
 
 .footer-inner {
   width: 1100px;
-  height: auto;
+  height: 55px;
   margin: 0 auto;
 }
 
 .Copyright {
-  padding: 20px 0;
+  padding: 20px 0 25px 0;
   font-size: 10px;
   letter-spacing: 0.5px;
   float: right;
