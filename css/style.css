@@ -3,9 +3,41 @@
 /*
 PCの横幅は1100px
 SP,TABの横幅は97%*/
+/*
+@media (max-width: 1199px) {
+  /* 横幅が1199px以下の場合に適用するスタイル 
+  div#sidebar { width: 97%; }
+}
+@media (min-width: 767px) {
+  /* 横幅が767px以上の場合に適用するスタイル
+  div#sidebar { width: 97%; }
+}
 
+*/
+
+/*まだHTMLには組み込んでない*/
+.inner{
+  width: 1100px; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  background: #fff59d;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	display: block;
+}
 
 .nav-background {
+  z-index: 2;
+  position: fixed;
+  /*inner入れたらいらない↓？*/
   height: 80px;
   width: 100%;
   background-color: #fff;
@@ -17,8 +49,12 @@ SP,TABの横幅は97%*/
   float: left;
 }
 
+.fas{
+  color: #777;
+}
 
 .contact-buttom {
+  text-decoration: none;
   float: right;
   color: #ffffff;
   font-size: 12px;
@@ -116,13 +152,15 @@ SP,TABの横幅は97%*/
 /*WORKの部分*/
 
 .work-inner {
-  width: 1100px;
+  background: #e3f2fd;
+  
   /*↓親要素にoverflowを付けると
   子要素にflot付けてもはみ出さない！*/
   overflow: auto;
   /* 好きな幅 */
+  /*inner入れたらいらない？↓*/
   margin: 0 auto;
-  background: #e3f2fd;
+  width: 1100px;
   padding-top: 50px;
 }
 
@@ -186,15 +224,17 @@ SP,TABの横幅は97%*/
   background: #fff;
 }
 
-/*widthとmaginで中央寄せ*/
+
 .skills-inner {
+  /*↓なぜかpaddingが無いと崩壊する*/
+  background: #fff;
+  z-index: 1;
+
+  /*inner入れたらいらない？↓*/
+  padding: 25px;
   width: 1100px;
   height: auto;
   margin: 0 auto;
-  /*↓なぜかpaddingが無いと崩壊する*/
-  padding: 25px;
-  background: #fff;
-
 }
 
 /*アイコン達の大きさ*/
@@ -270,11 +310,13 @@ SP,TABの横幅は97%*/
 
 
 .plan-inner {
+  background: #d0dfea;
+  /*inner入れたらいらない？↓*/
   width: 1100px;
   height: auto;
   margin: 0 auto;
   padding: 25px 25px 50px 25px;
-  background: #d0dfea;
+
 }
 
 .plan-title {
@@ -330,12 +372,13 @@ SP,TABの横幅は97%*/
 }
 
 .sns-inner{
+  background: #e3f2fd;
+  text-align: center;
+  /*inner入れたらいらない？↓*/
   width: 1100px;
   height: auto;
   margin: 0 auto;
   padding: 200px 0 ;
-  background: #e3f2fd;
-  text-align: center;
 }
 
 .fab {
@@ -367,6 +410,7 @@ footer {
 }
 
 .footer-inner {
+  /*inner入れたらいらない？↓*/
   width: 1100px;
   height: 55px;
   margin: 0 auto;
