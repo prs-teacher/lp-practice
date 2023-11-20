@@ -15,42 +15,50 @@ SP,TABの横幅は97%*/
 
 */
 
-/*まだHTMLには組み込んでない*/
-.inner{
-  width: 1100px; /* 好きな幅 */
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 25px;
-  background: #fff59d;
-}
-
 .clearfix:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.clearfix {
-	display: block;
+/*まだHTMLには組み込んでない*/
+.inner{
+  width: 1100px; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+section{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  background-color: #fff;
+
+  z-index: 2;
+  position: fixed;
+  inset: 0;
+  height: 78px;
 }
 
 .nav-background {
-  z-index: 2;
-  position: fixed;
-  /*inner入れたらいらない↓？*/
-  height: 80px;
-  width: 100%;
   background-color: #fff;
 }
 
 /*アイコンに大きさや色指定をするには？*/
 .nav-icon {
-  padding: 15px 0 15px 100px;
+  padding: 15px 15px ;
   float: left;
 }
 
 .fas{
   color: #777;
+}
+
+.contact{
+  padding: 12px 14px;
+  float: right;
 }
 
 .contact-buttom {
@@ -61,7 +69,7 @@ SP,TABの横幅は97%*/
   padding: 12px 14px;
   background-color: #6ba7be;
   width: 50px;
-  margin: 15px 100px 0 0;
+  
   -webkit-transition: all 0.3s ease;
 }
 
@@ -368,17 +376,15 @@ SP,TABの横幅は97%*/
 
 /*SNS*/
 .sns{
-  background: #e3f2fd;;
+  width: 100%;
+  background: #e3f2fd ;
 }
 
-.sns-inner{
+.sns-contents{
   background: #e3f2fd;
   text-align: center;
-  /*inner入れたらいらない？↓*/
-  width: 1100px;
   height: auto;
-  margin: 0 auto;
-  padding: 200px 0 ;
+  padding: 200px 0;
 }
 
 .fab {
@@ -407,14 +413,11 @@ SP,TABの横幅は97%*/
 
 footer {
   background: #cfd8dc;
+  width: 100%;
+  height: 55px;
 }
 
-.footer-inner {
-  /*inner入れたらいらない？↓*/
-  width: 1100px;
-  height: 55px;
-  margin: 0 auto;
-}
+
 
 .Copyright {
   padding: 20px 0 25px 0;
