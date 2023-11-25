@@ -1,1 +1,393 @@
 @charset "utf-8";
+
+/*
+PCの横幅は1100px
+SP,TABの横幅は97%*/
+/*
+@media (max-width: 1199px) {
+  /* 横幅が1199px以下の場合に適用するスタイル 
+  div#sidebar { width: 97%; }
+}
+@media (min-width: 767px) {
+  /* 横幅が767px以上の場合に適用するスタイル
+  div#sidebar { width: 97%; }
+}
+
+*/
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*まだHTMLには組み込んでない*/
+.inner{
+  width: 1100px; /* 好きな幅 */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+section{
+  width: 100%;
+}
+
+header{
+  width: 100%;
+  background-color: #fff;
+
+  z-index: 2;
+  position: fixed;
+  inset: 0;
+  height: 78px;
+}
+
+.nav-background {
+  background-color: #fff;
+}
+
+/*アイコンに大きさや色指定をするには？*/
+.nav-icon {
+  padding: 15px 15px ;
+  float: left;
+}
+
+.fas{
+  color: #777;
+}
+
+.contact{
+  padding: 12px 14px;
+  float: right;
+}
+
+.contact-buttom {
+  text-decoration: none;
+  float: right;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 14px;
+  background-color: #6ba7be;
+  width: 50px;
+  
+  -webkit-transition: all 0.3s ease;
+}
+
+.contact-buttom:hover {
+  background-color :#333;/*背景色*/
+  }
+
+
+/*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用
+.hamburger {
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 15px;
+  border: none;
+  background: transparent;
+}
+
+.hamburger_bar {
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  background: #777;
+  transition: top 0.24s, transform 0.24s, opacity 0.24s;
+  border-radius : 4px
+}
+
+.hamburger_bar:nth-child(1) {
+  top: 0;
+}
+
+.hamburger_bar:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger_bar:nth-child(3) {
+  top: 100%;
+  transform: translateY(-100%);
+}
+*/
+
+/*ディスクトップ写真の部分*/
+.keyvisual {
+  clear: both;
+  background-size: cover;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  /*↓子要素が複数あった場合に縦方向に並ぶ
+  flex-direction: column;
+  */
+}
+
+.content-keyvisual {
+  margin: 0 auto;
+  padding: 400px 0;
+  max-width: 1100px;
+  /*
+  text-align:center;
+  display:block;
+  margin:0 auto;
+  */
+  
+}
+
+.title-1 {
+  text-align: center;
+  font-size: 65px;
+  color: #6ba7eb;
+  /*１行に収めたい*/
+  white-space: nowrap;
+}
+
+.title-2 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  /*下400px付けたい*/
+  /*１行に収めたい*/
+  white-space: nowrap;
+}
+
+
+
+/*WORKの部分*/
+
+
+
+.work {
+  width: 100%;
+  background: #e3f2fd;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.pc-icon {
+  width: 250px;
+  float: left;
+}
+
+/*おそらくinnerというまとめ方で中央寄せする*/
+
+.work-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 20px 0 35px 0;
+}
+
+.work-text {
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+.work-text,
+.work-title {
+  text-align: center;
+}
+
+.pc-section {
+  height: auto;
+  margin: 0 auto;
+  max-width: 750px;
+  float: right;
+}
+
+/*
+.work-text .work-title{
+  text-align:center;
+  padding:20px 0;
+}
+
+.work-text .work-title{
+  float: left;
+  width: 700px;
+  display:table;
+  text-align:center;
+  margin-left: 10px;
+  max-width: 100%;
+}
+*/
+
+/*skiilsの部分*/
+
+/*innerの外何も無い空間ができないように*/
+.skills {
+  width: 100%;
+  background: #fff;
+  padding: 50px 0 70px 0;
+}
+
+/*「WE ARE SKILLS」のタイトル部分*/
+.skills-title {
+  padding-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/*アイコン達の大きさ*/
+/*横並び*/
+.browser,
+.Instagram,
+.crowd,
+.film,
+.picture,
+.music {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+/*兄弟要素の基礎margin値*/
+.s-box {
+  margin-right: 100px;
+  opacity: 0.7;
+}
+
+.s-box:hover {
+	opacity: 1.0 ;
+}
+
+
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(1),
+.s-box:nth-child(2),
+.s-box:nth-child(3) {
+  margin-bottom: 100px;
+}
+
+
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(3) {
+  margin-right: 0px;
+}
+
+/*擬似要素でmarginを細かく指定*/
+.s-box:nth-child(6) {
+  margin-right: 0px;
+}
+
+/*skillsのアイコン達を中央寄せ*/
+.icon-box {
+  margin: 0 auto;
+  background: #fff;
+  overflow: auto;
+}
+
+
+
+/*「SELECT PLAN」のタイトルがある部分*/
+
+.plan {
+  width: 100%;
+  background: #d0dfea;
+  padding-bottom: 50px;
+}
+
+
+.plan-title {
+  padding: 50px 0;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/*テーブルのCSS*/
+.design12 {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #f9f9f9;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+.design12 tr:nth-child(2n+1) {
+  background: #e0efff;
+}
+
+.design12 th {
+  padding: 10px;
+  border-left: solid 2px #fff;
+  background: #6ba7eb;
+  
+  
+}
+
+
+.design12 td {
+  padding: 10px;
+  border-left: solid 2px #fff;
+}
+
+.plan-sub{
+  font-weight: bold;
+
+}
+
+.table :first-child{
+  border-left: none;
+}
+
+/*↑テーブル*/
+
+/*SNS*/
+.sns{
+  width: 100%;
+  background: #e3f2fd ;
+}
+
+.sns-contents{
+  background: #e3f2fd;
+  text-align: center;
+  height: auto;
+  padding: 200px 0;
+}
+
+.fab {
+  font-size: 40px;
+  padding: 25px 50px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  -webkit-transition: all 0.5s ease;
+}
+
+  .fa-solid {
+  font-size: 40px;
+  padding: 25px 50px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  -webkit-transition: all 0.5s ease;
+}
+
+.fa-solid:hover {
+  color: #fff;
+}
+
+.fab:hover {
+  color: #fff;
+}
+
+footer {
+  background: #cfd8dc;
+  width: 100%;
+  height: 55px;
+}
+
+
+
+.Copyright {
+  padding: 20px 0 25px 0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  float: right;
+}
