@@ -121,22 +121,15 @@ header{
   clear: both;
   background-size: cover;
   background-image: url(../img/keyvisual/keyvisual.jpg);
+
+  margin: 0 auto;
+  padding: 400px 0;
+
   /*↓子要素が複数あった場合に縦方向に並ぶ
   flex-direction: column;
   */
 }
 
-.content-keyvisual {
-  margin: 0 auto;
-  padding: 400px 0;
-  max-width: 1100px;
-  /*
-  text-align:center;
-  display:block;
-  margin:0 auto;
-  */
-  
-}
 
 .title-1 {
   text-align: center;
@@ -351,6 +344,10 @@ header{
   text-align: center;
   height: auto;
   padding: 200px 0;
+}
+
+li{
+  display: inline;
 }
 
 .fab {
