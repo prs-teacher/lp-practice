@@ -15,6 +15,8 @@ SP,TABの横幅は97%*/
 
 */
 
+
+
 .clearfix:after {
 	content: "";
 	display: block;
@@ -235,7 +237,7 @@ header{
 .music {
   width: 300px;
   height: 300px;
-  float: left;
+  
 }
 
 /*兄弟要素の基礎margin値*/
@@ -272,9 +274,14 @@ header{
   margin: 0 auto;
   background: #fff;
   overflow: auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-
+.icon{
+}
 
 /*「SELECT PLAN」のタイトルがある部分*/
 
@@ -289,6 +296,7 @@ header{
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 /*テーブルのCSS*/
@@ -334,6 +342,7 @@ header{
 .sns{
   width: 100%;
   background: #e3f2fd ;
+  pointer-events: none;
 }
 
 .sns-contents{
@@ -341,6 +350,7 @@ header{
   text-align: center;
   height: auto;
   padding: 200px 0;
+  pointer-events: none;
 }
 
 li{
@@ -352,7 +362,8 @@ li{
   padding: 25px 50px;
   margin: 0 auto;
   color: #8c8c8c;
-  -webkit-transition: all 0.5s ease;
+  pointer-events: auto;
+
 }
 
   .fa-solid {
@@ -360,15 +371,17 @@ li{
   padding: 25px 50px;
   margin: 0 auto;
   color: #8c8c8c;
-  -webkit-transition: all 0.5s ease;
+  pointer-events: auto;
 }
 
-.fa-solid:hover {
-  color: #fff;
+.sns-contents:hover {
+  background: #fff;
+  transition: all 0.5s ease;
 }
 
-.fab:hover {
-  color: #fff;
+.sns:hover {
+  background: #fff;
+  transition: all 0.5s ease;
 }
 
 footer {
