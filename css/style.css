@@ -237,7 +237,7 @@ header{
 .music {
   width: 300px;
   height: 300px;
-  
+  float: left;
 }
 
 /*兄弟要素の基礎margin値*/
@@ -274,14 +274,9 @@ header{
   margin: 0 auto;
   background: #fff;
   overflow: auto;
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.icon{
-}
+
 
 /*「SELECT PLAN」のタイトルがある部分*/
 
@@ -371,7 +366,7 @@ li{
   padding: 25px 50px;
   margin: 0 auto;
   color: #8c8c8c;
-  pointer-events: auto;
+  
 }
 
 .sns-contents:hover {
