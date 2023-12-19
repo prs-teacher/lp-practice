@@ -162,8 +162,12 @@ header{
   overflow: auto;
 }
 
+.pc-box{
+  width: 100%;
+}
+
 .pc-icon {
-  width: 250px;
+  width: 40% /*250px*/;
   float: left;
 }
 
@@ -190,8 +194,8 @@ header{
 .pc-section {
   height: auto;
   margin: 0 auto;
-  max-width: 750px;
-  float: right;
+  max-width: 60% /*750px*/;
+  float: left;
 }
 
 /*
