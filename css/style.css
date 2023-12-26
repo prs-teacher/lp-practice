@@ -162,13 +162,16 @@ header{
   overflow: auto;
 }
 
+
 .pc-box{
-  width: 100%;
+  width: 40%;
+  float: left;
 }
 
+
 .pc-icon {
-  width: 40% /*250px*/;
-  float: left;
+  width:250px;
+  margin: 0 0 0 100px;
 }
 
 /*おそらくinnerというまとめ方で中央寄せする*/
@@ -373,23 +376,32 @@ header{
 
 }
 
-  .fa-solid {
+.fa-solid {
   font-size: 40px;
   padding: 25px 50px;
   margin: 0 auto;
   color: #8c8c8c;
-  
+  pointer-events: auto;
 }
 
+/*
 .sns-contents:hover {
   background: #fff;
   transition: all 0.5s ease;
 }
+*/
 
-.sns:hover {
+
+.fab:hover {
   background: #fff;
   transition: all 0.5s ease;
 }
+
+.fa-solid:hover {
+  background: #fff;
+  transition: all 0.5s ease;
+}
+
 
 footer {
   background: #cfd8dc;
