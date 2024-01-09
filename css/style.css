@@ -1,22 +1,5 @@
 @charset "utf-8";
 
-/*
-PCの横幅は1100px
-SP,TABの横幅は97%*/
-/*
-@media (max-width: 1199px) {
-  /* 横幅が1199px以下の場合に適用するスタイル 
-  div#sidebar { width: 97%; }
-}
-@media (min-width: 767px) {
-  /* 横幅が767px以上の場合に適用するスタイル
-  div#sidebar { width: 97%; }
-}
-
-*/
-
-
-
 .clearfix:after {
 	content: "";
 	display: block;
@@ -138,6 +121,7 @@ header{
   color: #6ba7eb;
   /*１行に収めたい*/
   white-space: nowrap;
+  margin-bottom: 30px;
 }
 
 .title-2 {
@@ -429,4 +413,24 @@ footer {
   font-size: 10px;
   letter-spacing: 0.5px;
   float: right;
+}
+
+
+/*
+PCの横幅は1100px
+SP,TABの横幅は97%
+*/
+@media (max-width: 1199px) and (min-width:768px) {
+  /*横幅が1199px以下の場合に適用するスタイル*/
+
+}
+@media (max-width: 767px)  {
+  /*SP→横幅が767px以上の場合に適用するスタイル*/
+  .title-1{
+    font-size: 40px;
+  }
+
+  .title-2{
+    font-size: 30px;
+  }
 }
