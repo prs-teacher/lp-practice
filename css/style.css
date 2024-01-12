@@ -444,4 +444,15 @@ SP,TABの横幅は97%
     max-width: initial;
     float: none;
   }
+/*skills*/  
+.image-box{
+    flex-wrap: nowrap;
+    display: block;
+    column-count:1;
+    text-align: center;
+  }
+.image{
+  padding-right: 0px;
+  padding-bottom: 0px;
+} 
 }
