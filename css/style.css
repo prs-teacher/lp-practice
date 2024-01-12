@@ -426,11 +426,22 @@ SP,TABの横幅は97%
 }
 @media (max-width: 767px)  {
   /*SP→横幅が767px以上の場合に適用するスタイル*/
+  /*content-keyvisual*/
   .title-1{
     font-size: 40px;
   }
 
   .title-2{
     font-size: 30px;
+  }
+/*work*/
+  .pc-box{
+    width: 100%;
+    float: none;
+  }
+
+  .pc-section{
+    max-width: initial;
+    float: none;
   }
 }
