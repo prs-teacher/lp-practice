@@ -426,6 +426,12 @@ SP,TABの横幅は97%
 }
 @media (max-width: 767px)  {
   /*SP→横幅が767px以上の場合に適用するスタイル*/
+  /*inner*/
+  .inner{
+    width: 767px; /* 好きな幅 */
+    max-width: 98%;
+    margin: 0 auto;
+  }
   /*content-keyvisual*/
   .title-1{
     font-size: 40px;
@@ -455,4 +461,18 @@ SP,TABの横幅は97%
   padding-right: 0px;
   padding-bottom: 0px;
 } 
+.image:nth-child(3n+1) {
+  padding-top:70px;
+}
+.image:nth-child(1) {
+  padding-top:0px;
+}
+/*plan*/
+.th{
+  font-size: 14px;
+  line-height: 22px;
+}
+.td{
+  font-size: 12px;
+}
 }
