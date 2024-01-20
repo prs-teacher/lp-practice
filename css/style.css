@@ -1,23 +1,24 @@
 @charset "utf-8";
 
 .clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*まだHTMLには組み込んでない*/
-.inner{
-  width: 1100px; /* 好きな幅 */
+.inner {
+  width: 1100px;
+  /* 好きな幅 */
   max-width: 100%;
   margin: 0 auto;
 }
 
-section{
+section {
   width: 100%;
 }
 
-header{
+header {
   width: 100%;
   background-color: #fff;
 
@@ -29,7 +30,7 @@ header{
 
 .nav-background {
   background-color: #fff;
-  padding:15px 0;
+  padding: 15px 0;
 }
 
 /*アイコンに大きさや色指定をするには？*/
@@ -37,12 +38,13 @@ header{
   float: left;
 }
 
-.fas{
+.fas {
   color: #777;
 }
 
-.contact{
+.contact {
   float: right;
+  display: block;
 }
 
 .contact-button {
@@ -53,52 +55,20 @@ header{
   padding: 12px 14px;
   background-color: #6ba7be;
   width: 50px;
-  
+
   -webkit-transition: all 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color :#333;/*背景色*/
-  }
-
-
-/*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用
-.hamburger {
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: 20px;
-  bottom: 20px;
-  right: 15px;
-  border: none;
-  background: transparent;
+  background-color: #333;
+  /*背景色*/
 }
 
-.hamburger_bar {
-  display: block;
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  background: #777;
-  transition: top 0.24s, transform 0.24s, opacity 0.24s;
-  border-radius : 4px
-}
 
-.hamburger_bar:nth-child(1) {
-  top: 0;
+/*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用*/
+.hamburger{
+  display: none;
 }
-
-.hamburger_bar:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.hamburger_bar:nth-child(3) {
-  top: 100%;
-  transform: translateY(-100%);
-}
-*/
 
 /*ディスクトップ写真の部分*/
 .keyvisual {
@@ -147,7 +117,7 @@ header{
 }
 
 
-.pc-box{
+.pc-box {
   width: 40%;
   float: left;
   text-align: center;
@@ -155,7 +125,7 @@ header{
 
 
 .pc-image {
-  width:250px;
+  width: 250px;
 }
 
 /*おそらくinnerというまとめ方で中央寄せする*/
@@ -179,7 +149,9 @@ header{
 }
 
 .pc-section {
-  max-width: 60% /*750px*/;
+  max-width: 60%
+    /*750px*/
+  ;
   float: left;
 }
 
@@ -227,10 +199,10 @@ header{
   flex-wrap: wrap;
   /*列の数を指定*/
   column-count: 3;
-  
+
 }
 
-.image{
+.image {
   padding-right: 100px;
   padding-bottom: 100px;
 }
@@ -254,7 +226,7 @@ header{
 }
 
 .s-box:hover {
-	opacity: 1.0 ;
+  opacity: 1.0;
 }
 
 
@@ -272,7 +244,7 @@ header{
 }
 
 .image:nth-child(3n+1):nth-last-child(-n+3),
-.image:nth-child(3n+1):nth-last-child(-n+3) ~ .image{
+.image:nth-child(3n+1):nth-last-child(-n+3)~.image {
   padding-bottom: 0px;
 }
 
@@ -313,8 +285,8 @@ header{
   padding: 10px;
   border-left: solid 2px #fff;
   background: #6ba7eb;
-  
-  
+
+
 }
 
 
@@ -323,26 +295,26 @@ header{
   border-left: solid 2px #fff;
 }
 
-.plan-sub{
+.plan-sub {
   font-weight: bold;
 
 }
 
-.table :first-child{
+.table :first-child {
   border-left: none;
 }
 
 /*↑テーブル*/
 
 /*SNS*/
-.sns{
+.sns {
   width: 100%;
-  background: #e3f2fd ;
+  background: #e3f2fd;
   pointer-events: none;
   padding: 200px 0;
 }
 
-.sns-contents{
+.sns-contents {
   background: #e3f2fd;
   text-align: center;
   height: auto;
@@ -353,8 +325,10 @@ header{
 }
 
 
-.fa-dribbble,.fa-twitter,.fa-envelope {
-  padding:25px 72.5px;
+.fa-dribbble,
+.fa-twitter,
+.fa-envelope {
+  padding: 25px 72.5px;
   font-size: 40px;
   margin: 0 auto;
   color: #8c8c8c;
@@ -362,8 +336,10 @@ header{
   transition: all 0.5s ease;
 }
 
-.fa-facebook-f{
-  padding:25px 80px/*←ここのpxだけ他アイコンと違う*/;
+.fa-facebook-f {
+  padding: 25px 80px
+    /*←ここのpxだけ他アイコンと違う*/
+  ;
   font-size: 40px;
   margin: 0 auto;
   color: #8c8c8c;
@@ -381,17 +357,17 @@ header{
 */
 
 
-.fa-facebook-f:hover{
+.fa-facebook-f:hover {
   background: #fff;
-  
+
 }
 
 
-.fa-dribbble:hover{
+.fa-dribbble:hover {
   background: #fff;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
   background: #fff;
 }
 
@@ -420,59 +396,167 @@ footer {
 PCの横幅は1100px
 SP,TABの横幅は97%
 */
+/*
 @media (max-width: 1199px) and (min-width:768px) {
-  /*横幅が1199px以下の場合に適用するスタイル*/
+  横幅が1199px以下の場合に適用するスタイル
 
 }
-@media (max-width: 767px)  {
+*/
+@media (max-width: 767px) {
+
   /*SP→横幅が767px以上の場合に適用するスタイル*/
   /*inner*/
-  .inner{
-    width: 767px; /* 好きな幅 */
+  .inner {
+    width: auto;
+    /* 好きな幅 */
     max-width: 98%;
     margin: 0 auto;
   }
+
+  /*contact*/
+  .contact {
+    display: none;
+  }
+
+  /*hamburger*/
+  .hamburger-menu {}
+
+  .hamburger {
+    /*
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 15px;
+    border: none;
+    background: transparent;
+*/
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+  }
+
+  .hamburger,.hamburger_bar {
+    /*
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background: #777;
+    transition: top 0.24s, transform 0.24s, opacity 0.24s;
+    border-radius: 4px;
+*/
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .hamburger_bar:nth-child(1)
+  ,.hamburger:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger_bar:nth-child(2)
+  ,.hamburger:nth-child(2) {
+    /*
+    top: 50%;
+    transform: translateY(-50%);
+*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .hamburger_bar:nth-child(3)
+  ,.hamburger:nth-child(3) {
+    /*
+    top: 100%;
+    transform: translateY(-100%);
+*/
+    bottom: 0;
+  }
+
+
+
+  /*keyvisual*/
+  .keyvisual {}
+
   /*content-keyvisual*/
-  .title-1{
+  .title-1 {
     font-size: 40px;
   }
 
-  .title-2{
+  .title-2 {
     font-size: 30px;
   }
-/*work*/
-  .pc-box{
+
+  /*work*/
+  .pc-box {
     width: 100%;
     float: none;
   }
 
-  .pc-section{
+  .pc-section {
     max-width: initial;
     float: none;
   }
-/*skills*/  
-.image-box{
+
+  /*skills*/
+  .image-box {
     flex-wrap: nowrap;
     display: block;
-    column-count:1;
+    column-count: 1;
     text-align: center;
   }
-.image{
-  padding-right: 0px;
-  padding-bottom: 0px;
-} 
-.image:nth-child(3n+1) {
-  padding-top:70px;
-}
-.image:nth-child(1) {
-  padding-top:0px;
-}
-/*plan*/
-.th{
-  font-size: 14px;
-  line-height: 22px;
-}
-.td{
-  font-size: 12px;
-}
+
+  .image {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image:nth-child(3n+1) {
+    padding-top: 70px;
+  }
+
+  .image:nth-child(1) {
+    padding-top: 0px;
+  }
+
+  /*plan*/
+  .th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .td {
+    font-size: 12px;
+  }
+
+  /*SNS*/
+  .sns {
+    padding: 50px 0 50px 0;
+  }
+
+  .sns-contents {
+    display: block;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .fa-facebook-f,
+  .fa-dribbble,
+  .fa-twitter,
+  .fa-envelope {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
