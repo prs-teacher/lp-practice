@@ -28,6 +28,10 @@ header {
   height: 78px;
 }
 
+.hamburger{
+  display: none;
+}
+
 .nav-background {
   background-color: #fff;
   padding: 15px 0;
@@ -66,9 +70,7 @@ header {
 
 
 /*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用*/
-.hamburger{
-  display: none;
-}
+
 
 /*ディスクトップ写真の部分*/
 .keyvisual {
@@ -395,13 +397,35 @@ footer {
 /*
 PCの横幅は1100px
 SP,TABの横幅は97%
-*/
-/*
+------------------------------------*/
+
 @media (max-width: 1199px) and (min-width:768px) {
-  横幅が1199px以下の場合に適用するスタイル
+  /*横幅が1199px以下の場合に適用するスタイル*/
+  /*content-keyvisual*/
+  .title-1 {
+    font-size: 40px;
+  }
+
+  .title-2 {
+    font-size: 30px;
+  }
+
+  /*work*/
+  .pc-box {
+    width: 100%;
+    float: none;
+  }
+
+  .pc-section {
+    max-width: initial;
+    float: none;
+  }
+
 
 }
-*/
+
+/*------------------------------*/
+
 @media (max-width: 767px) {
 
   /*SP→横幅が767px以上の場合に適用するスタイル*/
@@ -434,14 +458,15 @@ SP,TABの横幅は97%
 */
     display: block;
     position: relative;
-    width: 1.75rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 10px;
+    margin-top: 5px;
     z-index: 2;
+    float: right;
   }
 
-  .hamburger,.hamburger_bar {
-    /*
+  .hamburger_bar {
     display: block;
     width: 100%;
     height: 5px;
@@ -450,45 +475,47 @@ SP,TABの横幅は97%
     background: #777;
     transition: top 0.24s, transform 0.24s, opacity 0.24s;
     border-radius: 4px;
-*/
+  }
+    /*skills*/
+  .image-box {
+    flex-wrap: nowrap;
     display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-    position: absolute;
-    transition: transform 0.5s, opacity 0.5s;
+    column-count: 1;
+    text-align: center;
   }
 
-  .hamburger_bar:nth-child(1)
-  ,.hamburger:nth-child(1) {
+  .image {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image:nth-child(3n+1) {
+    padding-top: 70px;
+  }
+
+  .image:nth-child(1) {
+    padding-top: 0px;
+  }
+  
+  
+
+  .hamburger_bar:nth-child(1) {
     top: 0;
   }
 
-  .hamburger_bar:nth-child(2)
-  ,.hamburger:nth-child(2) {
-    /*
+  .hamburger_bar:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
-*/
-    top: 0;
-    bottom: 0;
-    margin: auto;
   }
 
-  .hamburger_bar:nth-child(3)
-  ,.hamburger:nth-child(3) {
-    /*
+  .hamburger_bar:nth-child(3) {
     top: 100%;
     transform: translateY(-100%);
-*/
-    bottom: 0;
   }
 
 
 
   /*keyvisual*/
-  .keyvisual {}
-
   /*content-keyvisual*/
   .title-1 {
     font-size: 40px;
