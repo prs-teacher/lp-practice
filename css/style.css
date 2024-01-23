@@ -8,7 +8,7 @@
 
 /*まだHTMLには組み込んでない*/
 .inner {
-  width: 1100px;
+  width: 1199px;
   /* 好きな幅 */
   max-width: 100%;
   margin: 0 auto;
@@ -71,6 +71,9 @@ header {
 
 /*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用*/
 
+main{
+  padding:78px 0px;
+}
 
 /*ディスクトップ写真の部分*/
 .keyvisual {
@@ -401,6 +404,12 @@ SP,TABの横幅は97%
 
 @media (max-width: 1199px) and (min-width:768px) {
   /*横幅が1199px以下の場合に適用するスタイル*/
+  .inner {
+    width: auto;
+    /* 好きな幅 */
+    max-width: 98%;
+    margin: 0 auto;
+  }
   /*content-keyvisual*/
   .title-1 {
     font-size: 40px;
@@ -424,9 +433,14 @@ SP,TABの横幅は97%
 
 }
 
-/*------------------------------*/
+/*------------------------------
+@media (max-width: 1100px) and (min-width:768px) {
+skillsが1100pxの幅あるからこのメディアクエリが必要？
+}
 
-@media (max-width: 767px) {
+------------------------------*/
+
+@media (max-width: 767.9px) {
 
   /*SP→横幅が767px以上の場合に適用するスタイル*/
   /*inner*/
