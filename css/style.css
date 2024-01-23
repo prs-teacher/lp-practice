@@ -430,6 +430,10 @@ SP,TABの横幅は97%
     float: none;
   }
 
+  /*SNS*/
+  .sns-contents{
+    padding:0px;
+  }
 
 }
 
