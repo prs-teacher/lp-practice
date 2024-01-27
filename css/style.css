@@ -10,7 +10,7 @@
 .inner {
   width: 1199px;
   /* 好きな幅 */
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ header {
   height: 78px;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
@@ -71,8 +71,8 @@ header {
 
 /*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用*/
 
-main{
-  padding:78px 0px;
+main {
+  padding-top: 78px;
 }
 
 /*ディスクトップ写真の部分*/
@@ -96,6 +96,9 @@ main{
   color: #6ba7eb;
   /*１行に収めたい*/
   white-space: nowrap;
+	overflow: scroll;
+	overflow-y: hidden;
+
   margin-bottom: 30px;
 }
 
@@ -106,6 +109,8 @@ main{
   /*下400px付けたい*/
   /*１行に収めたい*/
   white-space: nowrap;
+  overflow: scroll;
+	overflow-y: hidden;
 }
 
 
@@ -280,6 +285,7 @@ main{
   border-spacing: 0;
   background: #f9f9f9;
   font-size: 16px;
+  word-break: break-all;
 }
 
 .design12 tr:nth-child(2n+1) {
@@ -403,13 +409,15 @@ SP,TABの横幅は97%
 ------------------------------------*/
 
 @media (max-width: 1199px) and (min-width:768px) {
+
   /*横幅が1199px以下の場合に適用するスタイル*/
   .inner {
     width: auto;
     /* 好きな幅 */
-    max-width: 98%;
+    width: 97%;
     margin: 0 auto;
   }
+
   /*content-keyvisual*/
   .title-1 {
     font-size: 40px;
@@ -417,6 +425,28 @@ SP,TABの横幅は97%
 
   .title-2 {
     font-size: 30px;
+  }
+
+
+  /*skills*/
+  .image-box {
+    flex-wrap: nowrap;
+    display: block;
+    column-count: 1;
+    text-align: center;
+  }
+
+  .image {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image:nth-child(3n+1) {
+    padding-top: 70px;
+  }
+
+  .image:nth-child(1) {
+    padding-top: 0px;
   }
 
   /*work*/
@@ -431,8 +461,8 @@ SP,TABの横幅は97%
   }
 
   /*SNS*/
-  .sns-contents{
-    padding:0px;
+  .sns-contents {
+    padding: 0px;
   }
 
 }
@@ -451,7 +481,7 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
   .inner {
     width: auto;
     /* 好きな幅 */
-    max-width: 98%;
+    width: 97%;
     margin: 0 auto;
   }
 
@@ -494,28 +524,6 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
     transition: top 0.24s, transform 0.24s, opacity 0.24s;
     border-radius: 4px;
   }
-    /*skills*/
-  .image-box {
-    flex-wrap: nowrap;
-    display: block;
-    column-count: 1;
-    text-align: center;
-  }
-
-  .image {
-    padding-right: 0px;
-    padding-bottom: 0px;
-  }
-
-  .image:nth-child(3n+1) {
-    padding-top: 70px;
-  }
-
-  .image:nth-child(1) {
-    padding-top: 0px;
-  }
-  
-  
 
   .hamburger_bar:nth-child(1) {
     top: 0;
@@ -535,12 +543,20 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
 
   /*keyvisual*/
   /*content-keyvisual*/
+  /*↓文字が折り返してくれない
+  .content-keyvisual{
+    word-wrap: break-word;
+
+  }
+  */
   .title-1 {
     font-size: 40px;
+    word-wrap: break-all;  
   }
 
   .title-2 {
     font-size: 30px;
+    word-wrap: break-all;  
   }
 
   /*work*/
@@ -574,6 +590,7 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
   .image:nth-child(1) {
     padding-top: 0px;
   }
+
 
   /*plan*/
   .th {
