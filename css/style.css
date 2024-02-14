@@ -78,14 +78,15 @@ main {
 }
 
 /*ディスクトップ写真の部分*/
-.section-keyvisua{
+.section-keyvisua {
   text-align: center;
 }
 
 .keyvisual {
   background-size: cover;
   background-image: url(../img/keyvisual/keyvisual.jpg);
-  background-position: center; /* 背景画像を中央に配置 */
+  background-position: center;
+  /* 背景画像を中央に配置 */
   padding: 400px 0;
 }
 
@@ -227,6 +228,7 @@ main {
 .music {
   width: 300px;
   height: 300px;
+  vertical-align: middle;
 }
 
 /*兄弟要素の基礎margin値*/
@@ -464,6 +466,11 @@ SP,TABの横幅は97%
     float: none;
   }
 
+  .work-text {
+    padding-bottom: 50px;
+  }
+
+
   /*SNS*/
   .sns-contents {
     padding: 0px;
@@ -550,6 +557,7 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
   .keyvisual {
     padding: 200px 0;
   }
+
   /*↓文字が折り返してくれない
   .content-keyvisual{
     word-wrap: break-word;
@@ -557,13 +565,11 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
   }
   */
   .title-1 {
-    font-size: 40px;
-    word-wrap: break-all;
+    font-size: 5.5vw;
   }
 
   .title-2 {
-    font-size: 30px;
-    word-wrap: break-all;
+    font-size: 4.2vw;
   }
 
   /*work*/
@@ -575,6 +581,10 @@ skillsが1100pxの幅あるからこのメディアクエリが必要？
   .pc-section {
     max-width: initial;
     float: none;
+  }
+
+  .work-text {
+    padding-bottom: 50px;
   }
 
   /*skills*/
