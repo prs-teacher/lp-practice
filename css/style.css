@@ -426,11 +426,11 @@ SP,TABの横幅は97%
   }
 
   .title-1 {
-    font-size: 40px;
+    font-size: 5.2vw;/*PC×0.8*/
   }
 
   .title-2 {
-    font-size: 30px;
+    font-size: 3.2vw;/*PC×0.8*/
   }
 
 
