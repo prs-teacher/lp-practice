@@ -96,10 +96,6 @@ main {
   font-size: 65px;
   color: #6ba7eb;
   /*１行に収めたい*/
-  white-space: nowrap;
-  overflow: scroll;
-  overflow-y: hidden;
-
   margin-bottom: 30px;
 }
 
@@ -109,9 +105,6 @@ main {
   color: #ffffff;
   /*下400px付けたい*/
   /*１行に収めたい*/
-  white-space: nowrap;
-  overflow: scroll;
-  overflow-y: hidden;
 }
 
 
@@ -410,7 +403,7 @@ PCの横幅は1100px
 SP,TABの横幅は97%
 ------------------------------------*/
 
-@media (max-width: 1199px) and (min-width:767.9px) {
+@media (max-width: 1199px)  {
 
   /*横幅が1199px以下の場合に適用するスタイル*/
   .inner {
@@ -426,11 +419,9 @@ SP,TABの横幅は97%
   }
 
   .title-1 {
-    font-size: 5.2vw;/*PC×0.8*/
   }
 
   .title-2 {
-    font-size: 3.2vw;/*PC×0.8*/
   }
 
 
