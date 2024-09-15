@@ -1,1 +1,632 @@
 @charset "utf-8";
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*まだHTMLには組み込んでない*/
+.inner {
+  width: 1100px;
+  /* 好きな幅 */
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+
+  z-index: 2;
+  position: fixed;
+  inset: 0;
+  height: 78px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-background {
+  background-color: #fff;
+  padding: 15px 0 0 0;
+}
+
+/*アイコンに大きさや色指定をするには？*/
+.nav-icon {
+  float: left;
+}
+
+.fas {
+  color: #777;
+}
+
+.contact {
+  float: right;
+  display: block;
+  border: none;
+  background: transparent;
+}
+
+.contact-button {
+  text-decoration: none;
+  float: right;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 14px;
+  background-color: #6ba7be;
+  width: 50px;
+
+
+  -webkit-transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #333;
+  /*背景色*/
+}
+
+
+/*↓ハンバーガーメニューはsp版(スマホ版)のサイズ画面用*/
+
+main {
+  padding-top: 78px;
+}
+
+/*ディスクトップ写真の部分*/
+.section-keyvisua {
+  text-align: center;
+}
+
+.keyvisual {
+  background-size: cover;
+  background-image: url(../img/keyvisual/keyvisual.jpg);
+  background-position: center;
+  /* 背景画像を中央に配置 */
+  padding: 400px 0;
+}
+
+
+.title-1 {
+  text-align: center;
+  font-size: 65px;
+  color: #6ba7eb;
+  /*１行に収めたい*/
+  margin-bottom: 30px;
+}
+
+.title-2 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  /*下400px付けたい*/
+  /*１行に収めたい*/
+}
+
+
+
+/*WORKの部分*/
+
+
+
+.work {
+  width: 100%;
+  background: #e3f2fd;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+
+.pc-box {
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+
+.pc-image {
+  width: 250px;
+}
+
+/*おそらくinnerというまとめ方で中央寄せする*/
+
+.work-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 20px 0 35px 0;
+}
+
+.work-text {
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+.work-text,
+.work-title {
+  text-align: center;
+}
+
+.pc-section {
+  max-width: 60%
+    /*750px*/
+  ;
+  float: left;
+}
+
+/*
+.work-text .work-title{
+  text-align:center;
+  padding:20px 0;
+}
+
+.work-text .work-title{
+  float: left;
+  width: 700px;
+  display:table;
+  text-align:center;
+  margin-left: 10px;
+  max-width: 100%;
+}
+*/
+
+/*skiilsの部分*/
+
+/*innerの外何も無い空間ができないように*/
+.skills {
+  width: 100%;
+  background: #fff;
+  padding: 50px 0 70px 0;
+}
+
+/*「WE ARE SKILLS」のタイトル部分*/
+.skills-title {
+  padding-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/*skillsのアイコン達を中央寄せ*/
+.image-box {
+  margin: 0 auto;
+  background: #fff;
+  overflow: auto;
+  /*横並び*/
+  display: flex;
+  /*折り返しをする*/
+  flex-wrap: wrap;
+  /*列の数を指定*/
+  column-count: 3;
+
+}
+
+.image {
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+/*アイコン達の大きさ*/
+/*横並び*/
+.browser,
+.Instagram,
+.crowd,
+.film,
+.picture,
+.music {
+  width: 300px;
+  height: 300px;
+  vertical-align: middle;
+}
+
+/*兄弟要素の基礎margin値*/
+.s-box {
+  opacity: 0.7;
+  transition: 0.7s;
+}
+
+.s-box:hover {
+  opacity: 1.0;
+}
+
+
+/*擬似要素でmarginを細かく指定
+.s-box:nth-child(1),
+.s-box:nth-child(2),
+.s-box:nth-child(3) {
+}
+*/
+
+
+/*擬似要素でmarginを細かく指定*/
+.image:nth-child(3n) {
+  padding-right: 0px;
+}
+
+.image:nth-child(3n+1):nth-last-child(-n+3),
+.image:nth-child(3n+1):nth-last-child(-n+3)~.image {
+  padding-bottom: 0px;
+}
+
+
+
+
+/*「SELECT PLAN」のタイトルがある部分*/
+
+.plan {
+  width: 100%;
+  background: #d0dfea;
+  padding: 50px 0;
+}
+
+
+.plan-title {
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/*テーブルのCSS*/
+.design12 {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #f9f9f9;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.design12 tr:nth-child(2n+1) {
+  background: #e0efff;
+}
+
+.design12 th {
+  padding: 10px;
+  border-left: solid 2px #fff;
+  background: #6ba7eb;
+
+
+}
+
+
+.design12 td {
+  padding: 10px;
+  border-left: solid 2px #fff;
+}
+
+.plan-sub {
+  font-weight: bold;
+
+}
+
+.table :first-child {
+  border-left: none;
+}
+
+/*↑テーブル*/
+
+/*SNS*/
+.sns {
+  width: 100%;
+  background: #e3f2fd;
+  pointer-events: none;
+  padding: 200px 0;
+}
+
+.sns-contents {
+  background: #e3f2fd;
+  text-align: center;
+  height: auto;
+  pointer-events: none;
+
+  display: flex;
+  padding: 0 180px;
+}
+
+
+.fa-dribbble,
+.fa-twitter,
+.fa-envelope {
+  padding: 25px 72.5px;
+  font-size: 40px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  pointer-events: auto;
+  transition: all 0.5s ease;
+}
+
+.fa-facebook-f {
+  padding: 25px 80px
+    /*←ここのpxだけ他アイコンと違う*/
+  ;
+  font-size: 40px;
+  margin: 0 auto;
+  color: #8c8c8c;
+  pointer-events: auto;
+  transition: all 0.5s ease;
+}
+
+
+
+/*
+.sns-contents:hover {
+  background: #fff;
+  transition: all 0.5s ease;
+}
+*/
+
+
+.fa-facebook-f:hover {
+  background: #fff;
+
+}
+
+
+.fa-dribbble:hover {
+  background: #fff;
+}
+
+.fa-twitter:hover {
+  background: #fff;
+}
+
+.fa-envelope:hover {
+  background: #fff;
+}
+
+
+footer {
+  background: #cfd8dc;
+  width: 100%;
+  height: 55px;
+}
+
+
+
+.Copyright {
+  padding: 20px 0 25px 0;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  float: right;
+}
+
+
+/*
+PCの横幅は1100px
+SP,TABの横幅は97%
+------------------------------------*/
+
+@media (max-width: 1199px)  {
+
+  /*横幅が1199px以下の場合に適用するスタイル*/
+  .inner {
+    width: auto;
+    /* 好きな幅 */
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  /*content-keyvisual*/
+  .keyvisual {
+    padding: 250px 0;
+  }
+
+  .title-1 {
+  }
+
+  .title-2 {
+  }
+
+
+  /*skills*/
+  .image-box {
+    flex-wrap: nowrap;
+    display: block;
+    column-count: 1;
+    text-align: center;
+  }
+
+  .image {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image:nth-child(3n+1) {
+    padding-top: 70px;
+  }
+
+  .image:nth-child(1) {
+    padding-top: 0px;
+  }
+
+  /*work*/
+  .pc-box {
+    width: 100%;
+    float: none;
+  }
+
+  .pc-section {
+    max-width: initial;
+    float: none;
+  }
+
+  .work-text {
+    padding-bottom: 50px;
+  }
+
+
+  /*SNS*/
+  .sns-contents {
+    padding: 0px;
+  }
+
+}
+
+/*------------------------------
+@media (max-width: 1100px) and (min-width:768px) {
+skillsが1100pxの幅あるからこのメディアクエリが必要？
+}
+
+------------------------------*/
+
+@media (max-width: 767px) {
+
+  /*SP→横幅が767px以上の場合に適用するスタイル*/
+  /*inner*/
+  .inner {
+    width: auto;
+    /* 好きな幅 */
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  /*contact*/
+  .contact {
+    display: none;
+  }
+
+  /*hamburger*/
+  .hamburger-menu {}
+
+  .hamburger {
+    /*
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 15px;
+    border: none;
+    background: transparent;
+*/
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+    margin-top: 5px;
+    z-index: 2;
+    float: right;
+  }
+
+  .hamburger_bar {
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background: #777;
+    transition: top 0.24s, transform 0.24s, opacity 0.24s;
+    border-radius: 4px;
+  }
+
+  .hamburger_bar:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger_bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hamburger_bar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+
+
+  /*keyvisual*/
+  /*content-keyvisual*/
+  .keyvisual {
+    padding: 200px 0;
+  }
+
+  /*↓文字が折り返してくれない
+  .content-keyvisual{
+    word-wrap: break-word;
+
+  }
+  */
+  .title-1 {
+    font-size: 40px;
+  }
+
+  .title-2 {
+    font-size: 30px;
+  }
+
+  /*work*/
+  .pc-box {
+    width: 100%;
+    float: none;
+  }
+
+  .pc-section {
+    max-width: initial;
+    float: none;
+  }
+
+  .work-text {
+    padding-bottom: 50px;
+  }
+
+  /*skills*/
+  .image-box {
+    flex-wrap: nowrap;
+    display: block;
+    column-count: 1;
+    text-align: center;
+  }
+
+  .image {
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .image:nth-child(3n+1) {
+    padding-top: 70px;
+  }
+
+  .image:nth-child(1) {
+    padding-top: 0px;
+  }
+
+
+  /*plan*/
+  .th {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .td {
+    font-size: 12px;
+  }
+
+  /*SNS*/
+  .sns {
+    padding: 50px 0 50px 0;
+  }
+
+  .sns-contents {
+    display: block;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .fa-facebook-f,
+  .fa-dribbble,
+  .fa-twitter,
+  .fa-envelope {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

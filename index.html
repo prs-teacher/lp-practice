@@ -4,10 +4,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!--↓Font Awesomeのアイコンを読み込むことができる？-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
   <title>Document</title>
 </head>
+<!--どうやって使う？⇨<inner></inner>-->
+
+
 
 <body>
+  <header>
+
+    <nav class="nav-background">
+      <div class="inner">
+        <div class="clearfix">
+          <!--↓ここにアイコンフォントのコードを入れる--->
+          <div class="nav-icon">
+            <i class="fas fa-archway fa-3x"></i>
+          </div>
+          <!-- ナビゲーションメニューのコンテンツをここに配置 -->
+
+          <button class="contact">
+            <a href="#" class="contact-button">Contact</a>
+            <!-- <p class="contact-button">Contact</p>-->
+          </button>
+          <div class="hamburger">
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-keyvisual"><!-- メインタイトル、サブタイトル、背景画
+    像がある部分 -->
+      <div class="keyvisual">
+        <div class="inner">
+          <div class="content-keyvisual">
+            <h1 class="title-1">WEB PRODUCTION COMPANY</h1>
+            <h2 class="title-2">DIRECTION,CONTENT MARKETING</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+        <div class="pc-sentence-box"></div>
+        -->
+    <section class="work">
+      <!-- 「WORK」のタイトルがある部分 -->
+      <div class="inner">
+        <div class="clearfix">
+          <div class="pc-box">
+            <img class="pc-image" src="./img/pc/pc.png">
+          </div>
+          <div class="pc-section">
+            <h2 class="work-title">WORK</h2>
+            <p class="work-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut
+              labore et
+              dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur
+              sint
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="skills">
+      <!-- 「WE ARE SKILLS」のタイトルがある部分-->
+      <div class="inner">
+        <h2 class="skills-title">WE ARE SKILLS</h2>
+        <ul class="image-box">
+          <li class="image"><img class="browser s-box" src="./img/skills/skills_1.png"></li>
+          <li class="image"><img class="Instagram s-box" src="./img/skills/skills_2.png"></li>
+          <li class="image"><img class="crowd s-box" src="./img/skills/skills_3.png"></li>
+          <li class="image"><img class="film s-box" src="./img/skills/skills_4.png"></li>
+          <li class="image"><img class="picture s-box" src="./img/skills/skills_5.png"></li>
+          <li class="image"><img class="music s-box" src="./img/skills/skills_6.png"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="plan"><!-- 「SELECT PLAN」のタイトルがある部分 -->
+      <div class="inner">
+        <h2 class="plan-title">SELECT PLAN</h2>
+        <table class="design12"><!--テーブル-->
+          <tr class="table">
+            <th>PLAN</th>
+            <th>BASIC PLAN</th>
+            <th>STANDARD PLAN</th>
+            <th>ENTERPRISE PLAN</th>
+          </tr>
+          <tr class="table">
+            <td class="plan-sub">PRICE</td>
+            <td>¥100,000</td>
+            <td>¥200,000</td>
+            <td>¥300,000</td>
+          </tr>
+          <tr class="table">
+            <td class="plan-sub">DELIVERY</td>
+            <td>Manuscript</td>
+            <td>HTML</td>
+            <td>Manuscript,HTML,PSD</td>
+          </tr>
+          <tr class="table">
+            <td class="plan-sub">ANALYSIS</td>
+            <td>◯</td>
+            <td>◯</td>
+            <td>◯</td>
+          </tr>
+          <tr class="table">
+            <td class="plan-sub">IMPROVEMENT</td>
+            <td>×</td>
+            <td>◯</td>
+            <td>◯</td>
+          </tr>
+          <tr class="table">
+            <td class="plan-sub">DESIGN</td>
+            <td>×</td>
+            <td>×</td>
+            <td>◯</td>
+          </tr>
+        </table><!--テーブル-->
+      </div>
+    </section>
+    <nav class="sns"> <!-- iconが並んでいる部分 -->
+      <div class="inner">
+        <ul class="sns-contents">
+          <li class="fab fa-facebook-f"><a href="#"></a></li>
+          <li class="fab fa-dribbble"><a href="#"></a></li>
+          <li class="fab fa-twitter"><a href="#"></a></li>
+          <li class="fa-solid fa-envelope"><a href="#"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </main>
+  <footer>
+    <!-- フッターのコンテンツをここに配置 -->
+    <div class="inner">
+      <div class="clearfix">
+        <p class="Copyright">Copyright(c)</p>
+      </div>
+    </div>
+  </footer>
+
   <!-- Wrokの部分のテキストはこちらを使ってください -->
   <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
   dolore magna
