@@ -1,1 +1,176 @@
-@charset "utf-8";
+@charset "UTF-8";
+
+.site-header {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #777;
+  padding:15px 0;
+}
+
+
+.btn-contact {
+  display: inline-block;
+  background-color: #6ba7eb;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 12px 14px;
+  border-radius: 4px;
+  transition: color .3s ease;
+}
+.btn-contact:hover { color: #333; }
+
+/* ビジュアル */
+.keyvisual {
+  position: relative;
+}
+
+.hero-bg {
+  width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.keyvisual-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #62b2fc;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ワーク */
+.work {
+  background: #e3f2fd;
+}
+.work-inner {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 20px;
+  align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.work-img {
+  width: 250px;
+  padding-top:50px;
+}
+
+.section-title {
+  font-size: 40px;
+  letter-spacing:10px;
+  padding:20px 0 35px 0;
+  text-align: center;
+}
+.work-text p {
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+/* スキル */
+.skills {
+  background: #fff;
+  padding: 100px 0;
+}
+.skills-inner .section-title { margin-bottom: 50px; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  gap: 100px;
+}
+.skills-grid img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  opacity: .7;
+  transition: opacity .3s ease;
+}
+.skills-grid img:hover { opacity: 1; }
+
+/* PLAN */
+.plan {
+  background: #d0dfea;
+  padding: 70px 0;
+}
+.plan-inner .section-title { margin-bottom: 50px; }
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  background: #fff;
+}
+.price-table th,
+.price-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.price-table thead th {
+  background: #62b2fc;
+  color: #fff;
+}
+.price-table tbody tr:first-child td,
+.price-table tbody tr:first-child th {
+  background: #f9f9f9;
+}
+
+.price-table tbody tr:nth-child(2),
+.price-table tbody tr:nth-child(4) {
+  background: #e0efff;
+}
+
+/* SNS */
+.sns {
+  background: #e3f2fd;
+  padding: 200px 0;
+  margin: 0;
+}
+
+.sns-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 185px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sns a {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #8c8c8c;
+  overflow: hidden;
+  transition: background .5s ease, color .5s ease;
+  text-decoration: none;
+}
+.sns a:hover { background: #fff; }
